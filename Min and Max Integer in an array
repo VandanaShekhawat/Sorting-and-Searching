@@ -1,0 +1,18 @@
+public class MyClass {
+    public static void main(String args[]) {
+        //search min/max in an array
+     int[] arr = {18,12,-7,3,14,-28};
+     
+     int res = search(arr);
+    System.out.println(res);
+    }
+    static int search(int arr[]){
+        int no = arr[0];
+     for(int i = 1;i<arr.length;i++){
+        if(arr[i]<no){
+            no = arr[i];
+        }
+     }
+     return no;
+    }
+}
