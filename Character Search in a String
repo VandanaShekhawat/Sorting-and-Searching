@@ -1,0 +1,19 @@
+public class MyClass {
+    public static void main(String args[]) {
+        //To search particular string in a given string
+    String name = "VANDANA";
+    char target ='D';
+    System.out.println(search(name,target));
+    }
+    static boolean search(String str, char target){
+        if(str.length()==0){
+            return false;
+        }
+        for(char ch : str.toCharArray()){
+            if(ch == target){
+                return true;
+            }
+        }
+        return false;
+    }
+}
