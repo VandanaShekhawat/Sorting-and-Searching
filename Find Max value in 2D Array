@@ -1,0 +1,22 @@
+import java.util.Arrays;
+public class MyClass {
+    public static void main(String args[]) {
+      int [][] arr ={{12,22,21},{34,55,67},{78,99,70,45}};
+     // int target = 70;
+     // int []res = search(arr);
+      System.out.println(max(arr));
+    //  System.out.println(Arrays.toString(res));
+    }
+    static int max(int [][]arr){
+        int max = arr[0][0];
+        for(int [] ints : arr){
+            for(int element : ints){
+                if(element>max){
+                    max = element;
+                   
+                }
+            }
+        }
+        return max;
+    }
+}
