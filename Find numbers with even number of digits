@@ -1,0 +1,28 @@
+public class MyClass {
+    public static void main(String args[]) {
+     int [] arr = {12,345,2,6,7896,56,7890}; // There are 4 no with even numbers of digit
+     System.out.println(findNumbers(arr));
+    }
+    static int findNumbers(int[] arr){
+        int count = 0;
+        for(int num : arr){
+          if(even(num)){
+              count++;
+          }
+        }
+          return count;
+     } 
+        
+    static boolean even(int num){
+        int numberOfDigits = digits(num);
+        return numberOfDigits%2==0;
+    }
+    static int digits(int num){
+        int count = 0;
+        while(num>0){
+            num = num/10;
+            count++;
+        }
+        return count;
+    }
+}
