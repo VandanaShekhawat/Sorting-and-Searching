@@ -1,0 +1,23 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // To find maximum wealth of different account of a persons
+        // Mathamatics to find the highest sum of elements in 2D Array.
+      int[][] arr = {{2,3,4},{1,4,5},{2,3,1}};
+      int res = maxAmount(arr);
+      System.out.println(res);
+    }
+    static int maxAmount(int[][]arr){
+        int ans = arr[0][0];
+        for(int i =0;i<arr.length;i++){
+            int sum = 0;
+            for(int j = 0;j<arr[i].length;j++){
+                 sum +=arr[i][j];
+                   // now check max of each person 
+                }
+                if(sum> ans){
+                    ans = sum;
+                }
+            }
+            return ans;
+        }
+    }
